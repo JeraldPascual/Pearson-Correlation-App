@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pearson Correlation App</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Pearson Correlation App</h2>
+    <p>Enter values as comma-separated numbers</p>
+
+    <label>X values:</label>
+    <input type="text" id="xInput" placeholder="e.g. 1,2,3,4,5" />
+
+    <label>Y values:</label>
+    <input type="text" id="yInput" placeholder="e.g. 2,4,6,8,10" />
+
+    <button onclick="calculatePearson()">Calculate</button>
+    <button onclick="exportToCSV()">Export CSV</button>
+    <button onclick="downloadChart()">Download Chart</button>
+
+
+    <div id="result" style="margin-top: 20px; font-size: 18px"></div>
+
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
